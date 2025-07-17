@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const Footer = () => {
   return (
     <footer className="bg-black text-[#BCBCBC] text-sm py-10 text-center">

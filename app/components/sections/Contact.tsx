@@ -5,7 +5,7 @@ export default function Contact() {
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Full name:', fullname);
     console.log('Email:', email);
