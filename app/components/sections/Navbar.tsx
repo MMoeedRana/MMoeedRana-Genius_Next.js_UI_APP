@@ -1,5 +1,7 @@
 "use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -39,12 +41,12 @@ export const Navbar = () => {
 
             {/* Desktop Menu */}
             <nav className="hidden md:flex gap-6 items-center text-black/80 text-md">
-              <a href="/" className="hover:text-purple-800">Home</a>
-              <a href="/about" className="hover:text-purple-800">About</a>
-              <a href="/services" className="hover:text-purple-800">Services</a>
-              <a href="/testimonials" className="hover:text-purple-800">Testimonials</a>
-              <a href="/plans" className="hover:text-purple-800">Plans</a>
-              <a href="/contact" className="hover:text-purple-800">Contact</a>
+              <Link href="/" className="hover:text-purple-800">Home</Link>
+              <Link href="/about" className="hover:text-purple-800">About</Link>
+              <Link href="/services" className="hover:text-purple-800">Services</Link>
+              <Link href="/testimonials" className="hover:text-purple-800">Testimonials</Link>
+              <Link href="/plans" className="hover:text-purple-800">Plans</Link>
+              <Link href="/contact" className="hover:text-purple-800">Contact</Link>
               <button className="btn btn-primary hover:bg-purple-600">Get Started</button>
             </nav>
           </div>
